@@ -20,8 +20,9 @@
                         <thead>
                             <tr role="row">
                                 <th>Descrição</th>
-                                <th style="width:200px">Status</th>
-                                <th style="width:200px">Data de Finalização</th>
+                                <th style="width:70px">Status</th>
+                                <th style="width:150px">Data de Criação</th>
+                                <th style="width:150px">Data de Finalização</th>
                                 <th style="width:175px">Ações</th>
                             </tr>
                         </thead>
@@ -30,6 +31,7 @@
                             <tr>
                                 <td>{{$task->description}}</td>
                                 <td>{{$task->is_done_str}}</td>
+                                <td>{{$task->created_at->format('Y-m-d')}}</td>
                                 <td>{{$task->done_date}}</td>
                                 <td>
                                     <a class="btn btn-primary btn-sm" href="{{route('panel.task.edit', $task->id)}}">
@@ -95,7 +97,7 @@
                 "lengthMenu": "Mostrar _MENU_ Tarefas",
                 "search": "Filtrar tarefas",
                 "infoEmpty": "Mostrando 0 de 0 tarefas"
-                
+
             }
         });
         $('#example2').DataTable({

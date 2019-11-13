@@ -29,14 +29,15 @@ Você será redirecionado para a tela de listagem de tarefas pendentes e finaliz
 Uma tarefa tem uma descrição, data de finalização, status e timestamps de criação e atualização.
 
 **Criar tarefa:**
-    Para criar uma nova tarefa, basta clicar no botão "Adicionar tarefa". Você será redirecionado a uma página de criação, deverá escrever uma descrição para a tarefa e apertar em "Criar".
+    - Para criar uma nova tarefa, basta clicar no botão "Adicionar tarefa". Você será redirecionado a uma página de criação, deverá escrever uma descrição para a tarefa e apertar em "Salvar".
+    - Caso desista da criação, clique no botão "Voltar" para retornar a lista de tarefas.
     
 **Finalizar tarefa:**
-    Uma tarefa criada pode ser marcada como finalizada, clicando-se no botão "finalizar". Nesse caso, o status passa a ser "Finalizada" e a data de finalização é atualizada para a data atual.
-    Não é possível finalizar uma tarefa mais de uma vez. Nesse caso, o sistema retornará um erro.
+    - Para finalizar uma tarefa, basta clicar no botão "Finalizar". Nesse caso, o status passa a ser "Finalizada" e a data de finalização é atualizada para a data atual.
+    - Não é possível finalizar uma tarefa mais de uma vez. Nesse caso, o sistema retornará um erro.
 
-**Deletar tarefas**
-    Para deletar uma tarefa, basta clicar no botão "Deletar" e  em "Confirmar".
+**Apagar tarefa**
+    Para deletar uma tarefa, basta clicar no botão "Apagar" e  em "Delete".
 
 
 

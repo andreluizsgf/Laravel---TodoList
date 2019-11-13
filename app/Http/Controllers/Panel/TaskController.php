@@ -20,7 +20,7 @@ class TaskController extends Controller
         $tasks = Task::all()->sortBy(function($task){
             return $task->is_done;
         }); //ordena as tasks por status de finalização.
-        
+
         return view('panel.task.index', compact('tasks'));
     }
 
@@ -58,21 +58,21 @@ class TaskController extends Controller
     public function edit($task) //Atualiza o status de uma tarefa para "done"
     {
         $task = Task::find($task);
-        
-        if($task->is_done = 2) //Caso a tarefa já esteja finalizada, envia um erro.
+
+        if($task->is_done == 2) //Caso a tarefa já esteja finalizada, envia um erro.
             return redirect()->route('panel.task.index')->withErrors('Essa tarefa já foi finalizada!');
-        
+
         $task->is_done = 2;
         $task->done_date = Carbon::now()->format('Y-m-d');
         $task->save();
-        
+
         return redirect()->route('panel.task.index')->with('success', 'Parabéns por finalizar uma tarefa! :)');
     }
 
     public function destroy(Task $task)
     {
         $task->delete();
-        
+
         return redirect()->route('panel.task.index')->with('success', 'Tarefa deletada com sucesso.');
     }
 }

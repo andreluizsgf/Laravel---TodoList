@@ -1,14 +1,14 @@
 <div class="card-body">
     <div class="form-group row">
 
-        {!! Form::label('description', 'Descrição', ['class' => 'col-sm-1 control-label']) !!}
+        {!! Form::label('description', 'Descrição', ['class' => 'col-sm-2 control-label']) !!}
         <div class="col-sm-10 ">
             {!! Form::text('description',null,['class' => 'form-control input-jqv', 'id' => 'description', 'autocomplete' =>
             'username' ]) !!}
         </div>
         @error('name')
         <span class="invalid-feedback d-block"> {{ $message }} </span>
-        @enderror        
+        @enderror
     </div>
 </div>
 
