@@ -6,11 +6,20 @@
 1. `composer install`
 1. `cp .env.example .env`
 
+Lembre-se de criar um banco de dados MYSQL.
+Caso não saiba como, siga o tutorial abaixo:
+
+### Criar DB no MYSQL:
+
+1. No terminal, digite o comando `mysql -u "seunomedeusuario" -p;`;
+2. Digite sua senha;
+3. `CREATE DATABASE nomedoseubanco`
+
 ## Configuração do .env
 
-1. No campo "DB_DATABASE" ponha o nome do seu banco de dados MYSQL: DB_DATABASE=homestead;
-1. No campo "DB_USERNAME" ponha o seu usuário do MYSQL: DB_USERNAME=homestead;
-1. No campo "DB_PASSWORD" ponha a sua senha do MYSQL: DB_PASSWORD=secret;
+1. No campo "DB_DATABASE" ponha o nome do seu banco de dados MYSQL: DB_DATABASE=nomedoseubanco;
+1. No campo "DB_USERNAME" ponha o seu usuário do MYSQL: DB_USERNAME=seunomedeusuario;
+1. No campo "DB_PASSWORD" ponha a sua senha do MYSQL: DB_PASSWORD=suasenha;
 
 Rode os comandos:
 1. `php artisan key:generate`
