@@ -22,5 +22,5 @@ Route::get('painel', function () {
 });
 
 Route::group(['prefix' => 'panel', 'as' => 'panel.', 'middleware' => ['auth'], 'namespace' => 'Panel'], function () {
-    Route::resource('task', 'TaskController', ['except' => 'show','update']);  
+    Route::resource('task', 'TaskController', ['except' => 'show','update']);
 });
