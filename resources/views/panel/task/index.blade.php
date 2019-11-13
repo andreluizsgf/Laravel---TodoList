@@ -1,6 +1,6 @@
 @extends('layouts.panel')
 
-@section('title', 'Manter Usuários')
+@section('title', 'Gerenciar Tarefas')
 @section('css')
 <!-- DataTables -->
 <link rel="stylesheet" href="/panel/js/plugins/datatables/dataTables.bootstrap4.css">
@@ -20,8 +20,8 @@
                         <thead>
                             <tr role="row">
                                 <th>Descrição</th>
-                                <th>Status</th>
-                                <th>Data de Finalização</th>
+                                <th style="width:200px">Status</th>
+                                <th style="width:200px">Data de Finalização</th>
                                 <th style="width:175px">Ações</th>
                             </tr>
                         </thead>

@@ -14,7 +14,7 @@
 Auth::routes(['register' => false]);
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('painel', function () {

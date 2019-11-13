@@ -2,7 +2,7 @@
     <div class="form-group row">
 
         {!! Form::label('description', 'Descrição', ['class' => 'col-sm-1 control-label']) !!}
-        <div class="col-sm-3 ">
+        <div class="col-sm-10 ">
             {!! Form::text('description',null,['class' => 'form-control input-jqv', 'id' => 'description', 'autocomplete' =>
             'username' ]) !!}
         </div>
