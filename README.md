@@ -2,7 +2,7 @@
 
 ## Como Instalar
 
-1. `git clone`
+1. `git clone https://github.com/andreluizsgf/Laravel---TodoList.git`
 1. `composer install`
 1. `cp .env.example .env`
 
