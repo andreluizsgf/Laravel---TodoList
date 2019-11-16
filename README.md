@@ -29,7 +29,16 @@ Rode os comandos:
 No terminal, utilize o comando `php artisan serve`. O sistema pode ser acessado pelo endereço http://localhost:8000/
 
 ## Arquivos importantes:
-### Controller das Tarefas
+
+### Controle de rotas:
+**Caminho: routes/web.php**
+Algumas rotas são definidas nesse arquivo.
+
+A rota '/' retorna a view de login. 
+
+Na linha 24 é definido as rotas para as tarefas. O uso de middleware garante que nenhum usuário não logado consiga acessar quaisquer rotas nesse grupo. Por padrão, ao utilizar `Route::resource()` o Laravel instancia todas as rotas de um CRUD básico.
+
+### Controller das Tarefas:
 **Caminho: app/Http/Controllers/TaskController.php**
 
 Na Controller são definidos todos os métodos que abrangem uma tarefa.
