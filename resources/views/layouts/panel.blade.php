@@ -92,7 +92,7 @@
         Como posso mudar seu mundo hoje?
       </div>
       <!-- Default to the left -->
-      <strong>2019-{{\Carbon\Carbon::now()->year}} <a href="https://github.com/andreluizsgf">André Luiz Gomes</a></strong>
+      <strong>2019-{{\Carbon\Carbon::now()->year}} <a target="_blank" href="https://github.com/andreluizsgf">André Luiz Gomes</a></strong>
     </footer>
   </div>
   <!-- ./wrapper -->

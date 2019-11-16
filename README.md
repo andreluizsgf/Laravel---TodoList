@@ -26,7 +26,7 @@ Rode os comandos:
 1. `php artisan migrate:fresh --seed`, para subir o banco de dados e o administrador padrão.
 
 ## Inicialização do servidor:
-No terminal, utilize o comando `php artisan serve`. O sistema pode ser acessado pelo endereço http://localhost:8000/
+No terminal, utilize o comando `php artisan serve`. O sistema pode ser acessado <a target="_blank" href="http://localhost:8000/">aqui</a>
 
 ## Arquivos importantes:
 
